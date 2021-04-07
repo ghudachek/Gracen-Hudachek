@@ -1,0 +1,11 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.layout {
+  background-color: #f4efed;
+  background-position: right;
+  height: 200vh;
+  z-index: -1;
+}

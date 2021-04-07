@@ -1,0 +1,33 @@
+.my-work {
+  display: flex;
+}
+.project-btns {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+.work-btn {
+  font-size: 25px;
+  border-radius: 35px;
+  width: 20vw;
+  border: none;
+  margin: 10px;
+  padding: 15px;
+  outline: none;
+  background-color: #9d7446;
+  box-shadow: 0px 0px 5px #ac875f;
+  margin-right: 5vw;
+}
+.work-btn:hover {
+  background-color: #ac875f;
+}
+.projects {
+  font-size: 20px;
+  margin-top: 10vh;
+  width: 80vw;
+  height: 25vh;
+  border-radius: 20px;
+  border: 2px solid white;
+  color: white;
+  justify-content: flex-end;
+}

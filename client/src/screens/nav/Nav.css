@@ -1,0 +1,54 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f4efed;
+  color: black;
+  /* box-shadow: 0px 0px 15px #dfdad8e3; */
+  z-index: 2;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  color: #763426;
+}
+
+a.nav-link {
+  position: relative;
+  margin: 15px 10px 0px 10px;
+  order: 2;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #763426;
+  text-decoration: none;
+}
+
+a.nav-link:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #763426;
+
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+a.nav-link:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+.title {
+  text-align: center;
+  font-family: "Train One";
+  font-size: 80px;
+  color: black;
+  margin: 2px;
+}

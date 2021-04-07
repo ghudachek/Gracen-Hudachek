@@ -1,0 +1,67 @@
+p.message {
+  justify-content: right;
+  margin-top: 10vh;
+  margin-left: 60vw;
+  width: 20vw;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #f4efed;
+}
+.home-screen {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: #f4efed;
+}
+.background {
+  background-position: center;
+  background-size: cover;
+  width: 80vw;
+  height: 70vh;
+  align-self: center;
+  z-index: 1;
+}
+.line {
+  font-size: 80px;
+  margin: -22px;
+  padding: 0;
+  color: #c1ccd4;
+}
+.about-me-div {
+  background-color: #c1ccd4;
+  width: 40.7em;
+  height: 10em;
+  margin-left: 5vw;
+  color: #763426;
+}
+.projects-div {
+  background-color: #c1ccd4;
+  align-self: flex-end;
+  width: 40.7em;
+  height: 10em;
+  margin-right: 5vw;
+  color: #763426;
+}
+.contact-me {
+  background-color: #c1ccd4;
+  align-self: center;
+  width: 90vw;
+  height: 10em;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  color: #763426;
+  box-shadow: 0px 0px 25px#c1ccd4b9;
+}
+
+.contact-me,
+.projects-div,
+.about-me-div {
+  opacity: 0;
+  transition: opacity 0.3s 0.25s ease-out;
+  will-change: transform, opacity;
+}
+.contact-me.is-visible,
+.projects-div.is-visible,
+.about-me-div.is-visible {
+  opacity: 1;
+}
