@@ -1,9 +1,7 @@
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import Home from "./screens/Home/Home";
-import AboutMe from "./screens/AboutMe/AboutMe";
-import Work from "./screens/Work/Work";
-import Contact from "./screens/Contact/Contact";
+
 function App() {
   return (
     <div className="App">
@@ -11,15 +9,9 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/about-me">
-          <AboutMe />
-        </Route>
-        <Route path="/work">
-          <Work />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
+        <Route path="/about-me"></Route>
+        <Route path="/work"></Route>
+        <Route path="/contact"></Route>
       </Switch>
     </div>
   );

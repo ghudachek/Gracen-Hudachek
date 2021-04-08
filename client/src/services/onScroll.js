@@ -19,7 +19,6 @@ function loop() {
 }
 loop();
 function isElementInViewport(el) {
-  // special bonus for those using jQuery
   if (typeof $ === "function" && el instanceof $) {
     el = el[0];
   }
