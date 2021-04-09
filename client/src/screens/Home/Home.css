@@ -64,14 +64,6 @@ p.message {
   text-indent: 0px;
 }
 
-.projects-div {
-  background-color: #c1ccd4;
-  align-self: flex-end;
-  width: 40.7em;
-  height: 10em;
-  margin-right: 5vw;
-  color: #763426;
-}
 .contact-me {
   align-self: center;
   width: 90vw;
@@ -80,7 +72,7 @@ p.message {
   margin-left: 5vw;
   color: #763426;
 }
-/* MY WORK SECTION */
+/* MY WORK SECTION/ PROJECTS */
 .my-work-h1 {
   text-align: center;
   background-color: #ebe5e3;
@@ -90,36 +82,44 @@ p.message {
 .my-work {
   height: 100vh;
   background-color: #ebe5e3;
-  padding: 10vh;
+  padding: 5vh;
   display: flex;
+  justify-content: center;
 }
 .project-btns {
   display: flex;
-  flex-direction: column;
-  margin-top: 10vh;
+  align-self: flex-start;
+  width: fit-content;
 }
-.work-btn {
+.project {
   font-size: 25px;
-  border-radius: 35px;
-  width: 20vw;
-  border: none;
-  margin: 10px;
   padding: 15px;
-  outline: none;
+  margin: 10px;
+  width: 18vw;
   background-color: #9d7446;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.692);
+}
+
+.projects-div {
+  background-color: #c1ccd4;
+  align-self: flex-end;
+  width: 40.7em;
+  height: 10em;
   margin-right: 5vw;
+  color: #763426;
 }
-.work-btn:hover {
-  background-color: #ac875f;
+.project-img {
+  width: 10em;
+  box-shadow: 0px 0px 15px rgba(41, 41, 41, 0.81);
+  margin: 10px;
 }
-.projects {
-  font-size: 20px;
-  margin-top: 10vh;
-  width: 80vw;
-  height: 35vh;
-  border-radius: 20px;
-  border: 2px solid white;
-  color: white;
-  justify-content: flex-end;
+.project-img:hover {
+  opacity: 0.8;
+}
+.details a {
+  padding: 5px;
+}
+
+.details a:hover {
+  color: #c1ccd4;
 }

@@ -2,6 +2,10 @@ import React from "react";
 import Layout from "../layout/Layout";
 import "./Home.css";
 import Background from "../images/my-porfolio.jpg";
+import HangHuman from "../images/hanghuman.png";
+import RestGen from "../images/restaurant.png";
+import WYR from "../images/WYR.png";
+import CarApp from "../images/car-app.png";
 
 const Home = () => {
   return (
@@ -60,12 +64,57 @@ const Home = () => {
         <h1 className="my-work-h1">My Work</h1>
         <div className="my-work">
           <div className="project-btns">
-            <button className="work-btn">Restaurant Generator</button>
-            <button className="work-btn">HangHuman</button>
-            <button className="work-btn">Sunday Driver</button>
-            <button className="work-btn">Would You Rather</button>
+            <div className="project">
+              Restaurant Generator
+              <div className="details">
+                <img className="project-img" alt="project-img" src={RestGen} />
+                <p className="proj-description"> Full CRUD web app...</p>
+                <a href="https://ghudachek.github.io/Restaurant-Generator/">
+                  See Site
+                </a>
+                <a href="https://github.com/ghudachek/Restaurant-Generator">
+                  See Code
+                </a>
+              </div>
+            </div>
+            <div className="project">
+              HangHuman{" "}
+              <div className="details">
+                <img
+                  className="project-img"
+                  alt="project-img"
+                  src={HangHuman}
+                />
+                <p className="proj-description"> Full CRUD web app...</p>
+                <a href="https://elastic-heisenberg-02c1a9.netlify.app/">
+                  See Site
+                </a>
+                <a href="https://github.com/ghudachek/HangHuman">See Code</a>
+              </div>
+            </div>
+            <div className="project">
+              Sunday Driver{" "}
+              <div className="details">
+                <img className="project-img" alt="project-img" src={CarApp} />
+                <p className="proj-description"> Full CRUD web app...</p>
+                <a href="https://sundaydriver.netlify.app/">See Site</a>
+                <a href="https://github.com/ghudachek/car-app">See Code</a>
+              </div>
+            </div>
+            <div className="project">
+              Would You Rather{" "}
+              <div className="details">
+                <img className="project-img" alt="project-img" src={WYR} />
+                <p className="proj-description"> Full CRUD web app...</p>
+                <a href="https://606c7fd6ffd75e000719edb8--would-you-rather-200.netlify.app/">
+                  See Site
+                </a>
+                <a href="https://github.com/ghudachek/WouldYouRather">
+                  See Code
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="projects">project box</div>
         </div>
       </div>
 
