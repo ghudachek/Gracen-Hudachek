@@ -6,6 +6,7 @@ import HangHuman from "../images/hanghuman.png";
 import RestGen from "../images/restaurant.png";
 import WYR from "../images/WYR.png";
 import CarApp from "../images/car-app.png";
+import Email from "../../services/email";
 
 const Home = () => {
   return (
@@ -145,25 +146,10 @@ const Home = () => {
         <div className="contact-me show-on-scroll">
           <h1 className="my-contact-h1">CONTACT:</h1>
           <p>
-            Send me a message below or email me directly at: ghudachek@gmail.com
+            Send me a message below or email me directly at:{" "}
+            <a href="mailto: ghudachek@gmail.com">ghudachek@gmail.com</a>
           </p>
-          <form>
-            <label for="name">Name:</label>
-            <input name="name" id="name" type="text"></input>
-            <br />
-            <label for="email"> Email:</label>
-            <input id="email" name="email" type="text"></input>
-            <br />
-            <label for="message">Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="10"
-              cols="50"
-            ></textarea>
-            <br />
-            <button>Send</button>
-          </form>
+          <Email />
         </div>
       </div>
     </Layout>
