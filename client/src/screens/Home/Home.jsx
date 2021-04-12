@@ -68,7 +68,14 @@ const Home = () => {
               Restaurant Generator
               <div className="details">
                 <img className="project-img" alt="project-img" src={RestGen} />
-                <p className="proj-description"> Full CRUD web app...</p>
+                <p className="proj-description">
+                  {" "}
+                  Find Restaurants by location using the{" "}
+                  <a href="https://www.zomato.com/">Zomato </a> API. Save your
+                  top choices to a list and let the generator pick what
+                  restaurant you'll try first by clicking the "Choose For Me"
+                  button!
+                </p>
                 <a href="https://ghudachek.github.io/Restaurant-Generator/">
                   See Site
                 </a>
@@ -85,7 +92,12 @@ const Home = () => {
                   alt="project-img"
                   src={HangHuman}
                 />
-                <p className="proj-description"> Full CRUD web app...</p>
+                <p className="proj-description">
+                  {" "}
+                  The Classic Hangman game reproduced using React and Airtable.
+                  Users can create more levels to play and play others user
+                  created levels.
+                </p>
                 <a href="https://elastic-heisenberg-02c1a9.netlify.app/">
                   See Site
                 </a>
@@ -96,7 +108,11 @@ const Home = () => {
               Sunday Driver{" "}
               <div className="details">
                 <img className="project-img" alt="project-img" src={CarApp} />
-                <p className="proj-description"> Full CRUD web app...</p>
+                <p className="proj-description">
+                  {" "}
+                  An antique car selling site. Features full CRUD functionality,
+                  built in React with a backend in Express.{" "}
+                </p>
                 <a href="https://sundaydriver.netlify.app/">See Site</a>
                 <a href="https://github.com/ghudachek/car-app">See Code</a>
               </div>
@@ -105,7 +121,16 @@ const Home = () => {
               Would You Rather{" "}
               <div className="details">
                 <img className="project-img" alt="project-img" src={WYR} />
-                <p className="proj-description"> Full CRUD web app...</p>
+                <p className="proj-description">
+                  {" "}
+                  A place where choices are limited! Login in to join the fun
+                  and the debate. This web app features user interaction with
+                  the ability to create Would You Rathers(WYRs), choose WYR
+                  options which shows you the percentage of each option chosen
+                  by all users and elaborate on your choice in the debate
+                  section. Created with React on the front and with Ruby on
+                  Rails in the back.
+                </p>
                 <a href="https://606c7fd6ffd75e000719edb8--would-you-rather-200.netlify.app/">
                   See Site
                 </a>
@@ -116,9 +141,31 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="contact-me show-on-scroll">CONTACT:</div>
+        <div className="contact-me show-on-scroll">
+          <h1 className="my-contact-h1">CONTACT:</h1>
+          <p>
+            Send me a message below or email me directly at: ghudachek@gmail.com
+          </p>
+          <form>
+            <label for="name">Name:</label>
+            <input name="name" id="name" type="text"></input>
+            <br />
+            <label for="email"> Email:</label>
+            <input id="email" name="email" type="text"></input>
+            <br />
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="10"
+              cols="50"
+            ></textarea>
+            <br />
+            <button>Send</button>
+          </form>
+        </div>
+      </div>
     </Layout>
   );
 };

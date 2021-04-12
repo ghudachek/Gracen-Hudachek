@@ -12,7 +12,13 @@ const Nav = () => {
         <Link className="nav-link">About Me</Link>
         <Link className="nav-link">My Work</Link>
         <Link className="nav-link">Contact</Link>
-        <Link className="nav-link">Resume</Link>
+        <a
+          href="https://drive.google.com/file/d/1VCbrUCf_kzbAInIXusnSX0vz_J8arTZX/view?usp=sharing"
+          target="_blank"
+          className="nav-link"
+        >
+          Resume
+        </a>
       </div>
     </div>
   );
