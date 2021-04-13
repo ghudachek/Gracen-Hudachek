@@ -13,6 +13,13 @@ p.message {
   align-content: center;
   background-color: #f4efed;
 }
+.spice {
+  font-family: "dancing script";
+  font-size: 30px;
+}
+.blurb {
+  font-size: 18px;
+}
 .background {
   background-position: center;
   background-size: cover;

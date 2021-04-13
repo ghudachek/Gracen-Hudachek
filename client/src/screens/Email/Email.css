@@ -1,0 +1,30 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-input {
+  padding: 5px;
+  width: 60vw;
+  min-width: fit-content;
+  min-height: 1em;
+  align-self: center;
+}
+.contact-message {
+  height: 20em;
+}
+.contact-btn {
+  align-self: center;
+  width: 5em;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid #763426;
+  background-color: #763426;
+  color: white;
+}
+
+.contact-btn:hover {
+  border: 2px solid #c1ccd4;
+  background-color: #c1ccd4;
+  cursor: pointer;
+}

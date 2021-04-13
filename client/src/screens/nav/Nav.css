@@ -25,10 +25,15 @@ a.nav-link {
   margin: 15px 10px 0px 10px;
   order: 2;
   font-size: 20px;
+  transition: all 0.2s ease-in;
 }
 
 a {
   text-decoration: none;
+  color: #763426;
+}
+a:hover {
+  color: #8faecb;
 }
 a:visited {
   color: #763426;

@@ -9,9 +9,15 @@ const Nav = () => {
         <span className="title-descriptor">//Software Engineer</span>
       </Link>
       <div className="links-container">
-        <Link className="nav-link">About Me</Link>
-        <Link className="nav-link">My Work</Link>
-        <Link className="nav-link">Contact</Link>
+        <a className="nav-link" href="#aboutme">
+          About Me
+        </a>
+        <a className="nav-link" href="#projects">
+          My Work
+        </a>
+        <a className="nav-link" href="#contact">
+          Contact
+        </a>
         <a
           href="https://drive.google.com/file/d/1VCbrUCf_kzbAInIXusnSX0vz_J8arTZX/view?usp=sharing"
           target="_blank"

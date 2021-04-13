@@ -6,7 +6,7 @@ import HangHuman from "../images/hanghuman.png";
 import RestGen from "../images/restaurant.png";
 import WYR from "../images/WYR.png";
 import CarApp from "../images/car-app.png";
-import Email from "../../services/email";
+import Email from "../Email/Email";
 
 const Home = () => {
   return (
@@ -19,11 +19,14 @@ const Home = () => {
           ></div>
         </div>
         <div className="about-me-div show-on-scroll">
-          A Little About Me
+          <a id="aboutme"></a>A LITTLE ABOUT ME
           <p className="AM-Description">
             <div className="intro">
-              <b>GRACE</b>-<i>with a touch of spice</i>-<b>N</b>. <br />
-              <i>No, the "N" is not a typo and yes, I do go by Gracen!</i>
+              <b>GRACE</b>-<i className="spice">with a touch of spice</i>-
+              <b>N</b>. <br />
+              <i className="blurb">
+                (No, the "N" is not a typo and yes, I do go by Gracen!)
+              </i>
             </div>
             <div className="list">
               <li>
@@ -62,7 +65,8 @@ const Home = () => {
             </div>
           </p>
         </div>
-        <h1 className="my-work-h1">My Work</h1>
+        <a id="projects"></a>
+        <h1 className="my-work-h1">MY WORK</h1>
         <div className="my-work">
           <div className="project-btns">
             <div className="project">
@@ -142,9 +146,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-
+        <a id="contact"></a>
         <div className="contact-me show-on-scroll">
-          <h1 className="my-contact-h1">CONTACT:</h1>
+          <h1 className="my-contact-h1">LETS CHAT</h1>
           <p>
             Send me a message below or email me directly at:{" "}
             <a href="mailto: ghudachek@gmail.com">ghudachek@gmail.com</a>

@@ -1,3 +1,4 @@
+import "./Email.css";
 import emailjs from "emailjs-com";
 import React from "react";
 import { init } from "emailjs-com";
@@ -46,52 +47,48 @@ export default class extends React.Component {
     return (
       <div>
         <form
-          className="ui form"
+          className="contact-form"
           id={this.props.id}
           name={this.props.name}
           method={this.props.method}
           action={this.props.action}
         >
           <input
+            className="contact-input"
             id="name"
             name="name"
             onChange={this.handleInputChange.bind(this)}
             placeholder="your name"
             required
             value={this.state.name}
-            style={{ width: "100%" }}
             rows={1}
           />
           <br />
           <input
+            className="contact-input"
             id="email"
             name="email"
             onChange={this.handleInputChange.bind(this)}
             placeholder="your email address"
             required
             value={this.state.email}
-            style={{ width: "100%" }}
             rows={1}
           />
           <br />
           <textarea
+            className="contact-input contact-message"
             id="feedback"
             name="feedback"
             onChange={this.handleInputChange.bind(this)}
             placeholder="what would you like to chat about?"
             required
             value={this.state.feedback}
-            style={{ width: "100%", height: "250px" }}
           />
           <br />
           <input
             type="button"
             value="Send"
-            className="ui button"
-            style={{
-              fontFamily: "Amatic SC",
-              fontSize: "20px",
-            }}
+            className="contact-btn"
             onClick={this.sendMessage.bind(this)}
           />
         </form>
