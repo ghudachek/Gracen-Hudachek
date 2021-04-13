@@ -173,7 +173,7 @@ p.message {
   z-index: 1;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   .about-me-div {
     min-height: max-content;
     height: 110vh;
@@ -241,4 +241,7 @@ p.message {
   .triangle {
     margin-top: -105px;
   }
+}
+
+@media screen and (max-width: 400px) {
 }
