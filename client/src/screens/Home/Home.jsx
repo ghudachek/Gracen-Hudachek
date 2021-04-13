@@ -81,13 +81,13 @@ const Home = () => {
                   restaurant you'll try first by clicking the "Choose For Me"
                   button!
                 </p>
-                <a href="https://ghudachek.github.io/Restaurant-Generator/">
-                  See Site
-                </a>
-                <a href="https://github.com/ghudachek/Restaurant-Generator">
-                  See Code
-                </a>
               </div>
+              <a href="https://ghudachek.github.io/Restaurant-Generator/">
+                See Site
+              </a>
+              <a href="https://github.com/ghudachek/Restaurant-Generator">
+                See Code
+              </a>
             </div>
             <div className="project">
               HangHuman{" "}
@@ -103,11 +103,11 @@ const Home = () => {
                   Users can create more levels to play and play others user
                   created levels.
                 </p>
-                <a href="https://elastic-heisenberg-02c1a9.netlify.app/">
-                  See Site
-                </a>
-                <a href="https://github.com/ghudachek/HangHuman">See Code</a>
               </div>
+              <a href="https://elastic-heisenberg-02c1a9.netlify.app/">
+                See Site
+              </a>
+              <a href="https://github.com/ghudachek/HangHuman">See Code</a>
             </div>
             <div className="project">
               Sunday Driver{" "}
@@ -118,9 +118,9 @@ const Home = () => {
                   An antique car selling site. Features full CRUD functionality,
                   built in React with a backend in Express.{" "}
                 </p>
-                <a href="https://sundaydriver.netlify.app/">See Site</a>
-                <a href="https://github.com/ghudachek/car-app">See Code</a>
               </div>
+              <a href="https://sundaydriver.netlify.app/">See Site</a>
+              <a href="https://github.com/ghudachek/car-app">See Code</a>
             </div>
             <div className="project">
               Would You Rather{" "}
@@ -129,30 +129,27 @@ const Home = () => {
                 <p className="proj-description">
                   {" "}
                   A place where choices are limited! Login in to join the fun
-                  and the debate. This web app features user interaction with
-                  the ability to create Would You Rathers(WYRs), choose WYR
-                  options which shows you the percentage of each option chosen
-                  by all users and elaborate on your choice in the debate
-                  section. Created with React on the front and with Ruby on
-                  Rails in the back.
+                  and the debate. A place for users to answer Would You Rathers,
+                  create your own, and debate your choice. Created with React on
+                  the front and with Ruby on Rails in the back.
                 </p>
-                <a href="https://606c7fd6ffd75e000719edb8--would-you-rather-200.netlify.app/">
-                  See Site
-                </a>
-                <a href="https://github.com/ghudachek/WouldYouRather">
-                  See Code
-                </a>
               </div>
+              <a href="https://606c7fd6ffd75e000719edb8--would-you-rather-200.netlify.app/">
+                See Site
+              </a>
+              <a href="https://github.com/ghudachek/WouldYouRather">See Code</a>
             </div>
           </div>
         </div>
         <a id="contact"></a>
         <div className="contact-me show-on-scroll">
+          <div className="triangle"></div>
           <h1 className="my-contact-h1">LETS CHAT</h1>
-          <p>
+          <p className="contact-blurb">
             Send me a message below or email me directly at:{" "}
             <a href="mailto: ghudachek@gmail.com">ghudachek@gmail.com</a>
           </p>
+
           <Email />
         </div>
       </div>

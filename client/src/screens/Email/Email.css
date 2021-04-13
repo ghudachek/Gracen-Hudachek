@@ -9,6 +9,7 @@
   min-width: fit-content;
   min-height: 1em;
   align-self: center;
+  z-index: 1;
 }
 .contact-message {
   height: 20em;
