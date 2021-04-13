@@ -76,3 +76,20 @@ a.nav-link:hover:before {
   justify-content: center;
   align-content: center;
 }
+
+@media screen and (max-width: 500px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .links-container {
+    align-self: center;
+  }
+  .titles {
+    flex-direction: column;
+  }
+  .title-descriptor {
+    align-self: center;
+    font-size: 20px;
+  }
+}
