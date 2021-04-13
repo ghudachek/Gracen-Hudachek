@@ -7,8 +7,15 @@ function Layout(props) {
       <Nav user={props.user} />
       <div className="layout-children">{props.children}</div>
       <footer>
-        <a href="https://www.linkedin.com/in/gracen-hudachek">Linkedin</a>
-        <a href="https://github.com/ghudachek">github</a>
+        <a
+          className="footer-link"
+          href="https://www.linkedin.com/in/gracen-hudachek"
+        >
+          LinkedIn
+        </a>
+        <a className="footer-link" href="https://github.com/ghudachek">
+          Github
+        </a>
       </footer>
     </div>
   );
