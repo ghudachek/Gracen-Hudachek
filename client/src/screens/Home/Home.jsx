@@ -19,8 +19,11 @@ const Home = () => {
           ></div>
         </div>
         <div className="about-me-div show-on-scroll">
-          <a id="aboutme"></a>A LITTLE ABOUT ME
-          <p className="AM-Description">
+          <a id="aboutme" href="www.gracenhudachek.com">
+            _________
+          </a>
+          A LITTLE ABOUT ME
+          <div className="AM-Description">
             <div className="intro">
               <b>GRACE</b>-<i className="spice">with a touch of spice</i>-
               <b>N</b>. <br />
@@ -63,9 +66,11 @@ const Home = () => {
                 creativley , and <b> give</b> to my community and the future.
               </li>
             </div>
-          </p>
+          </div>
         </div>
-        <a id="projects"></a>
+        <a id="projects" href="www.gracenhudachek.com">
+          ___________
+        </a>
         <h1 className="my-work-h1">MY WORK</h1>
         <div className="my-work">
           <div className="project-btns">
@@ -141,7 +146,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <a id="contact"></a>
+        <a id="contact" href="www.gracenhudachek.com">
+          _________
+        </a>
         <div className="contact-me show-on-scroll">
           <div className="triangle"></div>
           <h1 className="my-contact-h1">LETS CHAT</h1>

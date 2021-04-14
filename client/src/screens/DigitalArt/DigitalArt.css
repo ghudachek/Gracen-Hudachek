@@ -1,0 +1,21 @@
+.artwork {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.my-art {
+  margin-top: 20vh;
+  text-align: center;
+  font-weight: bold;
+}
+.art-piece {
+  width: 25vw;
+  height: fit-content;
+  margin: 20px;
+  transition: ease-in 0.8s;
+}
+
+.art-piece:hover {
+  transform: scale(1.5);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.452);
+}

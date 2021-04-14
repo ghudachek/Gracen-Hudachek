@@ -127,6 +127,7 @@ p.message {
   padding: 5px;
   position: relative;
   bottom: 0;
+  z-index: 5;
 }
 
 .project a:hover {

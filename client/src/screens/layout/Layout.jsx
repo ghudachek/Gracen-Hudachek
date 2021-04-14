@@ -1,4 +1,5 @@
 import Nav from "../nav/Nav";
+import { Link } from "react-router-dom";
 import "./Layout.css";
 
 function Layout(props) {
@@ -16,6 +17,7 @@ function Layout(props) {
         <a className="footer-link" href="https://github.com/ghudachek">
           Github
         </a>
+        <Link to="/artwork">Art Work</Link>
       </footer>
     </div>
   );
