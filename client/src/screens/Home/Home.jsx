@@ -19,7 +19,11 @@ const Home = () => {
           ></div>
         </div>
         <div className="about-me-div show-on-scroll">
-          <a id="aboutme" href="www.gracenhudachek.com">
+          <a
+            className="hidden-link"
+            id="aboutme"
+            href="www.gracenhudachek.com/#aboutme"
+          >
             _________
           </a>
           A LITTLE ABOUT ME
@@ -68,7 +72,11 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <a id="projects" href="www.gracenhudachek.com">
+        <a
+          className="hidden-link"
+          id="projects"
+          href="www.gracenhudachek.com/#projects"
+        >
           ___________
         </a>
         <h1 className="my-work-h1">MY WORK</h1>
@@ -146,7 +154,11 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <a id="contact" href="www.gracenhudachek.com">
+        <a
+          className="hidden-link"
+          id="contact"
+          href="www.gracenhudachek.com/#contact"
+        >
           _________
         </a>
         <div className="contact-me show-on-scroll">

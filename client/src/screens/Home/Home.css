@@ -7,6 +7,18 @@ p.message {
   border-radius: 20px;
   background-color: #f4efed;
 }
+.hidden-link {
+  color: transparent;
+  z-index: -5;
+}
+.hidden-link:visited {
+  color: transparent;
+  z-index: -5;
+}
+.hidden-link:hover {
+  color: transparent;
+}
+
 .home-screen {
   display: flex;
   flex-direction: column;
@@ -127,7 +139,6 @@ p.message {
   padding: 5px;
   position: relative;
   bottom: 0;
-  z-index: 5;
 }
 
 .project a:hover {
@@ -174,10 +185,10 @@ p.message {
   z-index: 1;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
   .about-me-div {
-    min-height: max-content;
-    height: 110vh;
+    min-height: fit-content;
+    height: 70vh;
     font-size: 20px;
   }
   .AM-Description {
@@ -189,7 +200,7 @@ p.message {
   }
   .my-work {
     min-height: fit-content;
-    height: 200vh;
+    height: 150vh;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -197,6 +208,7 @@ p.message {
   .project-btns {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .project {
     font-size: 18px;
@@ -240,9 +252,39 @@ p.message {
   }
 
   .triangle {
-    margin-top: -105px;
+    margin-top: -204px;
+  }
+  .background {
+    background-position: center;
+    background-size: cover;
+    width: 70vw;
+    height: 70vh;
+    align-self: center;
+    z-index: 1;
+  }
+  .black {
+    display: flex;
+    justify-content: center;
+    background-color: black;
   }
 }
 
 @media screen and (max-width: 400px) {
+  .background {
+    background-position: center;
+    background-size: cover;
+    width: 70vw;
+    height: 40vh;
+    margin-left: 50px;
+    align-self: center;
+    z-index: 1;
+  }
+  .black {
+    display: flex;
+    justify-content: start;
+    background-color: black;
+  }
+  .triangle {
+    margin-top: -129px;
+  }
 }

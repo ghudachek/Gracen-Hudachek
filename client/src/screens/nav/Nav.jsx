@@ -48,13 +48,14 @@ const Nav = () => {
         <span className="title-descriptor">//Software Engineer</span>
       </Link>
       <div className="links-container">
-        <a className="nav-link" href="#aboutme">
+        <a className="nav-link" href="/#aboutme">
           About Me
         </a>
-        <a className="nav-link" href="#projects">
+
+        <a className="nav-link" href="/#projects">
           My Work
         </a>
-        <a className="nav-link" href="#contact">
+        <a className="nav-link" href="/#contact">
           Contact
         </a>
         <a
