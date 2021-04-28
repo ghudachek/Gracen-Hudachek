@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../layout/Layout";
+import { Link } from "react-router-dom";
 import "./Home.css";
 import Background from "../images/my-porfolio.jpg";
 import HangHuman from "../images/hanghuman.png";
@@ -7,7 +8,8 @@ import RestGen from "../images/restaurant.png";
 import WYR from "../images/WYR.png";
 import CarApp from "../images/car-app.png";
 import Email from "../Email/Email";
-
+import BirdPic from "../images/bird.png";
+import MeArt from "../images/Me+work.jpg";
 const Home = () => {
   return (
     <Layout>
@@ -18,14 +20,12 @@ const Home = () => {
             style={{ backgroundImage: `url(${Background})` }}
           ></div>
         </div>
-        <div className="about-me-div show-on-scroll">
+        <div className="about-me-div">
           <a
             className="hidden-link"
             id="aboutme"
             href="www.gracenhudachek.com/#aboutme"
-          >
-            _________
-          </a>
+          ></a>
           A LITTLE ABOUT ME
           <div className="AM-Description">
             <div className="intro">
@@ -76,9 +76,7 @@ const Home = () => {
           className="hidden-link"
           id="projects"
           href="www.gracenhudachek.com/#projects"
-        >
-          ___________
-        </a>
+        ></a>
         <h1 className="my-work-h1">MY WORK</h1>
         <div className="my-work">
           <div className="project-btns">
@@ -154,21 +152,31 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <div className="artwork-slide">
+          <p>I also make art...</p>
+          <img alt="bird" src={BirdPic} className="birdpic" />
+          <img alt="bird" src={MeArt} className="art-n-me" />
+          <div className="square"></div>
+          <div className="square2"></div>
+          <div className="square3"></div>
+          <p className="art-blurb">
+            Check it out... those photos on the wall were hand-drawn by me too!
+          </p>
+          <Link className="seemoreart" to="/artwork">
+            See More
+          </Link>
+        </div>
         <a
           className="hidden-link"
           id="contact"
           href="www.gracenhudachek.com/#contact"
-        >
-          _________
-        </a>
-        <div className="contact-me show-on-scroll">
-          <div className="triangle"></div>
+        ></a>
+        <div className="contact-me">
           <h1 className="my-contact-h1">LETS CHAT</h1>
           <p className="contact-blurb">
             Send me a message below or email me directly at:{" "}
             <a href="mailto: ghudachek@gmail.com">ghudachek@gmail.com</a>
           </p>
-
           <Email />
         </div>
       </div>

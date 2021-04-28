@@ -7,18 +7,6 @@ p.message {
   border-radius: 20px;
   background-color: #f4efed;
 }
-.hidden-link {
-  color: transparent;
-  z-index: -5;
-}
-.hidden-link:visited {
-  color: transparent;
-  z-index: -5;
-}
-.hidden-link:hover {
-  color: transparent;
-}
-
 .home-screen {
   display: flex;
   flex-direction: column;
@@ -55,7 +43,84 @@ p.message {
     filter: grayscale(0%) blur(0px);
   }
 }
-
+.artwork-slide {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 20px, 800px, 20px;
+}
+.art-n-me {
+  width: 300px;
+  align-self: center;
+  grid-column-start: 2;
+  grid-row: 2;
+  justify-self: center;
+}
+.birdpic {
+  width: 500px;
+  grid-row: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: center;
+}
+.artwork-slide p {
+  grid-row: 1;
+  color: white;
+  font-size: 30px;
+  justify-self: start;
+  margin-left: 20px;
+}
+.square {
+  background-color: #8c2f39;
+  width: 90px;
+  height: 90px;
+  grid-row: 2;
+  grid-column: 1;
+  justify-self: center;
+}
+a.seemoreart {
+  grid-column: 1;
+  grid-row: 3;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  justify-self: start;
+}
+p.art-blurb {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row: 2;
+  font-size: 20px;
+  word-wrap: normal;
+  width: 300px;
+  justify-self: end;
+  background-color: #8c2f39;
+  padding: 20px;
+  border-radius: 25px;
+  height: fit-content;
+}
+.seemoreart:hover {
+  color: #f7b0b0;
+}
+.square2 {
+  background-color: #f7b0b0;
+  width: 90px;
+  height: 90px;
+  margin-top: 120px;
+  grid-row: 2;
+  grid-column: 1;
+  justify-self: center;
+}
+.square3 {
+  background-color: white;
+  width: 90px;
+  height: 90px;
+  margin-top: 240px;
+  grid-row: 2;
+  grid-column: 1;
+  justify-self: center;
+}
 /* ABOUT ME SECTION */
 .about-me-div {
   min-height: fit-content;
@@ -92,10 +157,9 @@ p.message {
   padding-top: 50px;
 }
 .my-work {
-  height: 100vh;
+  display: flex;
   background-color: #ebe5e3;
   padding: 2vh;
-  display: flex;
   justify-content: center;
 }
 .project-btns {
@@ -147,10 +211,9 @@ p.message {
 /* CONTACT SECTION  */
 .my-contact-h1 {
   text-align: center;
-  margin: 0;
+  margin: 10px;
   padding-top: 20px;
   color: black;
-  z-index: 1;
 }
 .contact-me {
   background-color: #f4efed;
@@ -159,30 +222,9 @@ p.message {
   flex-direction: column;
   align-self: center;
   width: 100vw;
-  height: 90vh;
   margin-right: 5vw;
   margin-left: 5vw;
   color: #763426;
-}
-
-.triangle {
-  align-self: center;
-  width: 57vw;
-  height: 57vw;
-  transform: rotate(124.7deg) skewY(24deg);
-  background: linear-gradient(
-    to bottom left,
-    #ebe5e3 0%,
-    #ebe5e3 50%,
-    transparent 50%,
-    transparent 100%
-  );
-  position: absolute;
-  margin-top: -410px;
-  z-index: 0;
-}
-.contact-blurb {
-  z-index: 1;
 }
 
 @media screen and (max-width: 1100px) {
@@ -199,8 +241,6 @@ p.message {
     padding-top: 20px;
   }
   .my-work {
-    min-height: fit-content;
-    height: 150vh;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -251,9 +291,6 @@ p.message {
     min-height: fit-content;
   }
 
-  .triangle {
-    margin-top: -204px;
-  }
   .background {
     background-position: center;
     background-size: cover;
@@ -283,8 +320,5 @@ p.message {
     display: flex;
     justify-content: start;
     background-color: black;
-  }
-  .triangle {
-    margin-top: -129px;
   }
 }
