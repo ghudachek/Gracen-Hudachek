@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../layout/Layout";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import Background from "../images/my-porfolio.jpg";
+import Background from "../images/my-portfolio-small.jpg";
 import HangHuman from "../images/hanghuman.png";
 import RestGen from "../images/restaurant.png";
 import WYR from "../images/WYR.png";
