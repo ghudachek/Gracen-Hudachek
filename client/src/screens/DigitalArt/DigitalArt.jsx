@@ -1,6 +1,6 @@
 import React from "react";
 import "./DigitalArt.css";
-import Art1 from "./artwork/Art1.jpg";
+import Art1 from "./artwork/art1.jpg";
 import Art2 from "./artwork/art2.jpg";
 import Art3 from "./artwork/art3.PNG";
 import Art4 from "./artwork/art4.jpg";
