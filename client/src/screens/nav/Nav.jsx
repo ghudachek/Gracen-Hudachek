@@ -51,7 +51,7 @@ const Nav = () => {
           Contact
         </a>
         <a
-          href="https://drive.google.com/file/d/1CAKqEJQuOtGuYZ2DQFxJEgkMZMLLnWDF/view?usp=sharing"
+          href="https://www.canva.com/design/DAEeSbv8WD4/j_UxWYpEHijZ-LQPRHRdNw/view?utm_content=DAEeSbv8WD4&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
           target="_blank"
           className="nav-link"
         >
