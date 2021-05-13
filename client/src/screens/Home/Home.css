@@ -155,35 +155,53 @@ p.art-blurb {
   background-color: #ebe5e3;
   margin: 0;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 .my-work {
   display: flex;
+  justify-content: space-evenly;
   background-color: #ebe5e3;
-  padding: 2vh;
-  justify-content: center;
+  padding-bottom: 200px;
 }
 .project-btns {
+  font-size: 25px;
+  background-color: #9d7446;
+  border-radius: 10px;
+  width: 35vw;
+  height: 50px;
+  margin: 10px;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.692);
+}
+.project-btns:hover {
+  cursor: pointer;
+  background-color: #b68e60;
+}
+.project-show {
   display: flex;
-  align-self: flex-start;
-  width: fit-content;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+  margin: 15px;
+}
+
+#projects-box {
+  background-color: #9d7446;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 69%);
+  width: 40vw;
+  min-width: fit-content;
+  transition: ease-in-out 2s;
 }
 .project {
   font-size: 25px;
   padding: 15px;
   margin: 10px;
-  width: 18vw;
-  background-color: #9d7446;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.692);
+  width: 40vw;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  transition: ease-in 3s;
 }
 
-.projects-div {
-  background-color: #c1ccd4;
-  align-self: flex-end;
-  width: 60em;
-  height: 10em;
-  margin-right: 5vw;
-  color: #763426;
-}
 .proj-description {
   max-height: 30vh;
   font-size: 18px;
@@ -194,9 +212,10 @@ p.art-blurb {
   display: none;
 }
 .project-img {
-  width: 10em;
+  width: 20em;
   box-shadow: 0px 0px 15px rgba(41, 41, 41, 0.81);
   margin: 10px;
+  transition: ease-in-out 4s;
 }
 
 .project a {
@@ -215,6 +234,7 @@ p.art-blurb {
   padding-top: 20px;
   color: black;
 }
+
 .contact-me {
   background-color: #f4efed;
   border-top: none;
@@ -244,11 +264,23 @@ p.art-blurb {
     padding: 0;
     display: flex;
     flex-direction: column;
+    padding-bottom: 150px;
+  }
+
+  #projects-box {
+    background-color: #9d7446;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 69%);
+    width: 20vw;
+    margin-top: 20px;
   }
   .project-btns {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    width: 100%;
     align-items: center;
+    justify-content: center;
+    font-size: 20px;
   }
   .project {
     font-size: 18px;
@@ -256,21 +288,19 @@ p.art-blurb {
     margin: 10px;
     width: fit-content;
   }
-
-  .projects-div {
-    background-color: #c1ccd4;
-    align-self: flex-end;
-    width: 60em;
-    height: 10em;
-    margin-right: 5vw;
-    color: #763426;
+  .project-show {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 15px;
   }
   .proj-description {
     max-height: 30vh;
     font-size: 15px;
   }
   .project-img {
-    width: 15em;
+    width: 25em;
   }
 
   .project a {
@@ -320,5 +350,23 @@ p.art-blurb {
     display: flex;
     justify-content: start;
     background-color: black;
+  }
+  .project-show {
+    align-items: center;
+  }
+  .project-img {
+    width: 15em;
+  }
+  .square,
+  .square2,
+  .square3 {
+    display: none;
+  }
+  .artwork-slide {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav {
+    position: sticky;
   }
 }
